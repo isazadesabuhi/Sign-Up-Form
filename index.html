@@ -5,7 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Sign-up</title>
+    <title>Sign-up Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="content">
+      <div class="picture">
+        <div class="logo">
+          <img src="./logo.png" alt="logo" class="class-logo" />
+          <h1 class="lyon">Lyon</h1>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="intro-text left">
+          <p>
+            Wanna visit Lyon? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Pariatur quod doloribus possimus provident eum
+            beatae quam dolore voluptas a autem asperiores illum ullam omnis
+            amet.
+          </p>
+          <p><a href="#">Sign up</a> <em>now</em> and get some infos.</p>
+          <p class="remote-text">You should visit <em>Lyon</em> .</p>
+        </div>
+
+        <form action="#">
+          <div class="form left">
+            <p class="form-title">Here you go!</p>
+            <div class="input">
+              <label for="first-name">First name</label>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+
+            <div class="input">
+              <label for="last-name">Last name</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="input">
+              <label for="phone-number">Phone number</label>
+              <input
+                type="text"
+                name="phone-number"
+                id="phone-number"
+                minlength="10"
+                maxlength="10"
+              />
+            </div>
+
+            <div class="input">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+
+            <div class="input">
+              <label for="confirm-password">Confirm password</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="left button">
+            <button type="submit">Create Account</button>
+          </div>
+        </form>
+
+        <div class="log-in left">
+          <p>Already have an account?</p>
+          <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
